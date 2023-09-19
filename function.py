@@ -1,5 +1,7 @@
 import tkinter as tk
+
 from CTkMessagebox import CTkMessagebox
+
 from db_connection import cursor, conn
 
 
@@ -57,5 +59,3 @@ def display_tasks(listbox):
     rows = cursor.fetchall()
     for row in rows:
         listbox.insert(tk.END, row)
-
-
